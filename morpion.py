@@ -4,13 +4,6 @@ grille = {
     "C":['_','_','_']
 }
 
-def afficher_grille(grille: dict) -> None:
-    for ligne, colonnes in grille.items():
-        print(f"{colonnes}")
-
-afficher_grille(grille)
-
-
 def aff_grille(grille: dict) -> None:
     print(f"   | 1 | 2 | 3 |")
     for ligne , colonnes in grille.items():
