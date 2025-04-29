@@ -9,4 +9,9 @@ def aff_grille(grille: dict) -> None:
     for ligne , colonnes in grille.items():
         print(f" {ligne} | {colonnes[0]} | {colonnes[1]} | {colonnes[2]} |")
 
-aff_grille(grille)
+
+def jouer_coup(grille: dict, joueur: str, coup: tuple)-> None:
+    grille[coup[0]][coup[1]-1] = joueur 
+
+
+
