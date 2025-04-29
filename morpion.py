@@ -17,3 +17,11 @@ def aff_grille(grille: dict) -> None:
         print(f" {ligne} | {colonnes[0]} | {colonnes[1]} | {colonnes[2]} |")
 
 aff_grille(grille)
+
+
+def est_coup_valide(position:tuple, grille:dict) -> bool:
+    colonne, ligne = position
+    if grille[colonne][ligne] == '_' :
+        return True
+    else :
+        return False
